@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modelos de Servicio — Cloud Computing</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">☁ Cloud</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li class="dropdown">
+      <a href="modelos-servicio.html" class="active">Modelos ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#iaas">IaaS</a></li>
+        <li><a href="#paas">PaaS</a></li>
+        <li><a href="#saas">SaaS</a></li>
+      </ul>
+    </li>
+    <li><a href="ventajas.html">Ventajas</a></li>
+    <li><a href="seguridad.html">Seguridad</a></li>
+    <li><a href="tendencias.html">Tendencias</a></li>
+    <li><a href="proveedores.html">Proveedores</a></li>
+  </ul>
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <h1><span>IaaS, PaaS</span> y SaaS</h1>
+  <p>Los tres modelos principales de servicio en la nube, según el nivel de control del usuario.</p>
+</div>
+
+<div class="section">
+  <p class="section-label">Comparativa</p>
+  <h2>¿Quién gestiona qué?</h2>
+  <p class="lead">Cuanto más alto el modelo, más gestiona el proveedor y menos el usuario.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Capa</th>
+          <th>On-Premise</th>
+          <th>IaaS</th>
+          <th>PaaS</th>
+          <th>SaaS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Aplicaciones</td><td>Usuario</td><td>Usuario</td><td>Usuario</td><td>Proveedor</td></tr>
+        <tr><td>Datos</td><td>Usuario</td><td>Usuario</td><td>Usuario</td><td>Proveedor</td></tr>
+        <tr><td>Runtime / Middleware</td><td>Usuario</td><td>Usuario</td><td>Proveedor</td><td>Proveedor</td></tr>
+        <tr><td>Sistema Operativo</td><td>Usuario</td><td>Usuario</td><td>Proveedor</td><td>Proveedor</td></tr>
+        <tr><td>Servidores y Redes</td><td>Usuario</td><td>Proveedor</td><td>Proveedor</td><td>Proveedor</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="section-alt">
+  <div class="section" id="iaas">
+    <p class="section-label">Modelo 1</p>
+    <h2>IaaS — Infraestructura como Servicio</h2>
+    <p class="lead">El proveedor ofrece servidores virtuales, almacenamiento y redes. El usuario gestiona el sistema operativo y las aplicaciones.</p>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>¿Qué incluye?</h3>
+        <p>Servidores virtuales, almacenamiento en disco, redes privadas y balanceadores de carga accesibles por API.</p>
+      </div>
+      <div class="card reveal">
+        <h3>¿Para quién es?</h3>
+        <p>Empresas que necesitan control total sobre la infraestructura sin comprar hardware físico.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Ejemplos</h3>
+        <p>Amazon EC2, Amazon S3, Google Compute Engine, Microsoft Azure VMs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="paas">
+  <p class="section-label">Modelo 2</p>
+  <h2>PaaS — Plataforma como Servicio</h2>
+  <p class="lead">El proveedor ofrece un entorno de desarrollo completo. El desarrollador solo se enfoca en escribir el código de la aplicación.</p>
+  <div class="grid">
+    <div class="card reveal">
+      <h3>¿Qué incluye?</h3>
+      <p>Herramientas de desarrollo, bases de datos, servidores de aplicaciones y sistemas de despliegue automático.</p>
+    </div>
+    <div class="card reveal">
+      <h3>¿Para quién es?</h3>
+      <p>Desarrolladores y equipos de software que quieren crear aplicaciones sin administrar servidores.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Ejemplos</h3>
+      <p>Google App Engine, Heroku, Microsoft Azure App Service, AWS Elastic Beanstalk.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-alt">
+  <div class="section" id="saas">
+    <p class="section-label">Modelo 3</p>
+    <h2>SaaS — Software como Servicio</h2>
+    <p class="lead">El proveedor ofrece la aplicación lista para usar desde el navegador. El usuario solo necesita una cuenta.</p>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>¿Qué incluye?</h3>
+        <p>Aplicación completa, actualizaciones automáticas, seguridad y almacenamiento gestionados por el proveedor.</p>
+      </div>
+      <div class="card reveal">
+        <h3>¿Para quién es?</h3>
+        <p>Cualquier usuario o empresa que quiera usar software sin instalación ni mantenimiento técnico.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Ejemplos</h3>
+        <p>Gmail, Google Workspace, Microsoft Office 365, Zoom, Slack, Netflix, Dropbox.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">Video</p>
+  <h2 style="margin-bottom:1.5rem;">IaaS, PaaS y SaaS explicados</h2>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/VR8aXePkQ5M" title="IaaS PaaS SaaS" allowfullscreen></iframe>
+  </div>
+</div>
+
+<footer>© 2026 Darwin Yahir Pérez López — Cloud</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
